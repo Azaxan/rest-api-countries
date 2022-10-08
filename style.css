@@ -1,0 +1,136 @@
+:root {
+  --color-text: hsl(200, 15%, 8%);
+  --color-input: hsl(0, 0%, 52%);
+  --color-background: hsl(0, 0%, 93%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.header,
+.main-content,
+.filters {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--color-white);
+}
+
+.main-content {
+  background-color: var(--color-background);
+  padding: 0 32px;
+}
+
+.header button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px 32px;
+}
+
+#query {
+  box-shadow: 4px 4px 24px 0px rgba(194, 195, 202, 1);
+  background-color: var(--color-background);
+  border-radius: 1px;
+  border: none;
+  color: var(--color-input);
+  padding: 15px 30px;
+}
+
+#region {
+  box-shadow: 4px 4px 24px 0px rgba(194, 195, 202, 1);
+  background-color: var(--color-background);
+  border-radius: 1px;
+  border: none;
+  padding: 15px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+  list-style: none;
+}
+
+li {
+  box-shadow: 1px 1px 10px 0px rgba(194, 195, 202, 1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+li img {
+  aspect-ratio: 160/115;
+  width: 100%;
+}
+
+.info-container {
+  padding: 30px 20px;
+}
+
+.info-container strong {
+  padding-right: 2px;
+}
+
+.country-name {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1440px) {
+  ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
+}
