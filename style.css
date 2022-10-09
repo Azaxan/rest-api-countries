@@ -134,3 +134,18 @@ li img {
     grid-template-columns: 1fr;
   }
 }
+
+.detail-button {
+  background: transparent;
+  box-shadow: 4px 4px 24px 0px rgba(194, 195, 202, 1);
+  color: var(--color-text);
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
